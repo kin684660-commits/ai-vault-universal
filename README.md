@@ -14,155 +14,103 @@
 </p>
 
 <p>
-  <a href="#-安装到浏览器">🚀 安装使用</a> ·
-  <a href="#-功能截图">📸 功能截图</a> ·
-  <a href="#-使用场景">💡 使用场景</a> ·
+  <a href="#-安装到浏览器">🚀 安装</a> ·
+  <a href="#-核心功能">✨ 功能</a> ·
+  <a href="#-使用场景">💡 场景</a> ·
   <a href="#english">English</a>
 </p>
+
+<br/>
+
+<img src="sidebar.png" width="380" alt="AI Vault 侧边栏" />
+
+<br/><br/>
+
+<p><i>在 ChatGPT、Claude、Gemini 等任意 AI 页面，一个侧边栏管理你所有的 AI 内容</i></p>
 
 </div>
 
 ---
 
-你每天和 AI 对话，但好内容总是消失：
+你每天和 AI 对话，但好内容总是消失：切换标签页就丢了，换个模型要重新解释背景，长对话找不回某一段，好的 Prompt 每次都要重写。
 
-- 切换标签页就丢了
-- 换个模型要重新解释背景
-- 长对话找不回某一段
-- 好的 Prompt 每次都要重写
-- 几十轮聊天没有任何沉淀
-
-**AI Vault Universal** 就是来解决这些问题的。它在你的 AI 对话流程里做最小化介入，把有价值的内容留下来，让你下次能直接用。
+**AI Vault Universal** 解决这些问题。它在你的 AI 对话流程里做最小化介入，把有价值的内容留下来，让你下次能直接用。
 
 ---
 
-## 🚀 安装到浏览器
+## ✨ 核心功能
 
-> 目前支持 Chrome / Edge，3 分钟完成安装，不需要任何账号。
+### 一键保存
 
-### 第一步：下载插件
+在任意网页或 AI 页面，选中文字 → `Ctrl+Shift+S` 或右键菜单，立即保存。支持保存整段 AI 回复、当前页面、选中文字。自动记录来源平台和时间。
 
-点击右侧 **[Releases](https://github.com/kin684660-commits/ai-vault-universal/releases/latest)** → 下载最新的 `.zip` 文件 → 解压到任意文件夹
+### 长期片段库 · `/触发词` 插入
 
-### 第二步：打开浏览器扩展页
+<div align="center">
+<img src="snippets.png" width="360" alt="长期片段库" />
+</div>
 
-- **Chrome**：地址栏输入 `chrome://extensions` 回车
-- **Edge**：地址栏输入 `edge://extensions` 回车
+把你的个人背景、常用 Prompt、Skill 包存进来。在任意 AI 输入框输入 `/` 即可唤出，回车插入。一次存储，11 个平台处处可用。
 
-### 第三步：开启开发者模式
+### Skill Studio · 好对话变成可复用模板
 
-页面右上角找到 **「开发者模式」** 开关，打开它（开关变蓝）
+<div align="center">
+<img src="skill-rule.png" width="560" alt="Skill Studio" />
+</div>
 
-### 第四步：加载插件
+某次 AI 回答特别好？两种模式把它沉淀成 Skill 包：
 
-点击左上角 **「加载已解压的扩展程序」** → 选择你刚才解压的文件夹 → 确定
+- **规则生成** — 自动提取对话结构，生成名称、触发词、标签、用途描述，直接编辑保存
+- **借当前 AI** — 生成总结提示词插入输入框，把 AI 回复导入为草稿，换模型也能用
 
-### 第五步：完成 ✅
+### 上下文胶囊 · 长对话压缩续聊
 
-工具栏会出现 AI Vault 图标。打开任意 AI 网页（如 ChatGPT、Claude），就可以开始使用了。
+对话太长？一键压缩成结构化续聊包，省 token，切换模型也不丢失上下文。支持三种模式：轻压缩 / 续聊包 / Skill 候选。
 
-> 💡 **建议**：点击工具栏图标右边的「固定」📌，把插件固定到工具栏，方便随时点击。
+### 导出中心
+
+支持导出到 **Markdown**（适合 Obsidian / Notion）· **JSON**（完整备份）· **PDF**（本地存档）。可选范围：当前选中 / 当前页面 / 当前对话 / 最后一条 AI 回复 / 全部知识库。
+
+### 长对话目录导航
+
+在 AI 页面自动提取对话节点，右侧悬浮目录，点击一步跳转到任意位置。
 
 ---
 
 ## 支持平台
 
-`ChatGPT` `Claude` `Gemini` `DeepSeek` `Kimi` `豆包` `Grok` `Perplexity` `Poe` `Copilot` `Mistral` `任意网页`
+`ChatGPT` `Claude` `Gemini` `DeepSeek` `Kimi` `豆包` `Grok` `Perplexity` `Poe` `Copilot` `Mistral` 以及**任意网页**（右键菜单）
 
 ---
 
-## 📸 功能截图
+## 🚀 安装到浏览器
 
-### 侧边栏 · 随时唤出，不打断心流
+> 支持 Chrome / Edge，约 2 分钟，不需要任何账号。
 
-在任意 AI 页面按 `Ctrl+Shift+K`（Mac: `⌘+Shift+K`）打开，或点击悬浮入口。
+**① 下载**：点击右侧 [Releases](https://github.com/kin684660-commits/ai-vault-universal/releases/latest) → 下载最新 `.zip` → 解压到任意文件夹
 
-![侧边栏](sidebar.png)
+**② 打开扩展页**：Chrome 地址栏输入 `chrome://extensions` 回车（Edge 输入 `edge://extensions`）
 
-三个核心区域：**摘录**（已保存内容）· **长期片段**（Skill 包 / Prompt / 个人信息）· **目录**（对话导航）
+**③ 开启开发者模式**：页面右上角找到「开发者模式」开关，打开（变蓝）
 
-底部快捷入口：上下文胶囊 · 导出中心 · AI 整理 · 导出 PDF / JSON / Markdown
+**④ 加载插件**：点击「加载已解压的扩展程序」→ 选择刚才解压的文件夹 → 确定
 
----
+**⑤ 完成** ✅：工具栏出现 AI Vault 图标，打开任意 AI 页面即可使用
 
-### Skill Studio · 把好的对话沉淀成可复用模板
-
-某次 AI 回答特别好？两种模式把它变成下次直接调用的 Skill 包。
-
-**模式 1：规则生成** — 插件自动提取对话结构，生成 Skill 名称、触发词、分组、标签、一句话用途
-
-![Skill Studio 规则模式](skill-rule.png)
-
-**模式 2：借当前 AI** — 插件生成总结提示词，一键插入输入框，发送后把 AI 回复导入草稿，换模型也能用
-
-![Skill Studio AI模式](skill-ai.png)
-
----
-
-### 上下文胶囊 · 长对话压缩，省 token，换模型不丢失
-
-对话太长？一键压缩成结构化的续聊包。
-
-![上下文胶囊](capsule.png)
-
-三种压缩类型：
-- 💊 **轻压缩** — 省 token，继续当前对话
-- 🔁 **续聊包** — 压缩成「背景 + 已完成 + 下一步」，切换模型无缝接续
-- 🧠 **Skill 候选** — 适合进一步沉淀为 Skill 包
-
----
-
-### 长期片段库 · 个人信息 / Prompt / Skill 包统一管理
-
-把你长期用的背景信息、提示词模板、Skill 包都存在这里。
-
-![长期片段库](snippets.png)
-
-在任意 AI 输入框输入 `/触发词` 即可唤出，回车插入。不用每次重新解释背景。
-
----
-
-### 导出中心 · Markdown / JSON / PDF
-
-你的知识，你来决定怎么存。
-
-![导出中心](export.png)
-
-导出范围：当前选中 · 当前页面 · 当前对话 · 最后一条 AI 回复 · 全部知识库
-
----
-
-### Popup 主界面 · 当前页面一键操作
-
-![Popup](popup.png)
-
----
-
-### 设置页 · 行为完全可控
-
-![设置页](options.png)
+> 建议点击图标旁边的 📌 把插件固定到工具栏，方便随时打开。
 
 ---
 
 ## 💡 使用场景
 
-**场景 1：看到好内容，先存下来**
-选中文字 → `Ctrl+Shift+S` 或右键菜单「保存到 AI Vault」→ 后续再整理标签和分组
-
-**场景 2：把常用背景信息存进去，一次存，处处用**
-在长期片段库新增你的个人背景、技术栈、写作风格 → 在任意 AI 输入框输入 `/` 触发词即可插入
-
-**场景 3：好聊天沉淀成 Skill 包**
-某次对话质量特别高 → 打开 Skill Studio → 规则模式一键生成草稿 → 保存 → 下次直接调用
-
-**场景 4：对话太长，切换模型**
-打开上下文胶囊 → 选「续聊包」→ 插入到新模型输入框 → 无缝接续
-
-**场景 5：让 AI 帮你整理知识库**
-AI 整理功能生成整理指令 → 发给任意 AI → AI 返回分组建议 → 一键合并到本地库
-
-**场景 6：导出备份**
-导出中心 → 选范围和格式 → 导出 PDF / Markdown / JSON → 存入 Obsidian 或本地归档
+| 场景 | 做法 |
+|------|------|
+| 看到好内容先存下来 | 选中文字 → `Ctrl+Shift+S` 或右键保存 |
+| 提问时自动填入个人背景 | 在长期片段库存好背景信息，输入框里输入 `/` 触发 |
+| 好聊天沉淀成 Skill 包 | 打开 Skill Studio → 规则模式一键生成 → 保存 |
+| 切换模型时上下文不丢 | 上下文胶囊 → 选「续聊包」→ 插入到新模型输入框 |
+| 整理知识库 | AI 整理 → 生成分组建议 → 一键合并 |
+| 导出备份 | 导出中心 → 选格式 → PDF / Markdown / JSON |
 
 ---
 
@@ -178,30 +126,29 @@ AI 整理功能生成整理指令 → 发给任意 AI → AI 返回分组建议 
 
 ---
 
-## 隐私说明
+## 隐私
 
-- ✅ 所有数据通过 `chrome.storage.local` 保存在**本地浏览器**，不经过任何服务器
-- ✅ 不需要注册账号或登录
+- ✅ 所有数据通过 `chrome.storage.local` 存在**本地浏览器**，不经过任何服务器
+- ✅ 不需要账号，不需要登录
 - ✅ 源代码完全开放，可自行审计
-- ✅ 卸载插件即可清除全部数据
+- ✅ 卸载即清除全部数据
 
 ---
 
 ## English
 
-**AI Vault Universal** is a browser extension that turns your temporary AI conversations into a local, persistent knowledge base.
+**AI Vault Universal** is a browser extension that turns your AI conversations into a local, reusable knowledge base.
 
 **Key features:**
-- One-click save: selected text, AI responses, or full pages — from any website
-- Long-term snippet library with `/trigger` insertion in any AI input box
-- **Skill Studio** — distill great conversations into reusable Skill Packs (rule-based or AI-assisted)
-- **Context Capsule** — compress long conversations into compact handoffs (lite / resume / skill candidate)
+- One-click save: selected text, AI responses, or full pages from any website
+- Snippet library with `/trigger` insertion across 11 AI platforms
+- **Skill Studio** — distill great conversations into reusable Skill Packs
+- **Context Capsule** — compress long chats into compact handoffs for switching models
 - Floating TOC for navigating long conversations
-- Export to Markdown / JSON / PDF with 5 export scopes
-- Works with ChatGPT, Claude, Gemini, DeepSeek, Kimi, Doubao, Grok, Perplexity, Poe, Copilot, Mistral + any webpage
+- Export to Markdown / JSON / PDF
 - **100% local** — no server, no account, no uploads
 
-**Install:** Go to [Releases](https://github.com/kin684660-commits/ai-vault-universal/releases/latest) → download zip → unzip → open `chrome://extensions` → enable Developer mode → click "Load unpacked" → select the folder.
+**Install:** [Releases](https://github.com/kin684660-commits/ai-vault-universal/releases/latest) → download zip → unzip → `chrome://extensions` → Developer mode → Load unpacked → select folder.
 
 ---
 
@@ -209,8 +156,6 @@ AI 整理功能生成整理指令 → 发给任意 AI → AI 返回分组建议 
 
 MIT © 2025 [kin684660-commits](https://github.com/kin684660-commits)
 
----
-
-<div align="center">
-  <sub>如果这个插件对你有用，欢迎点个 ⭐ Star 支持一下</sub>
+<div align="center"><br/>
+<sub>如果对你有用，欢迎点个 ⭐ Star 支持一下</sub>
 </div>
