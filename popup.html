@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Vault Universal</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <div>
+        <div class="brand">AI <span>Vault</span></div>
+        <div class="sub">全网页摘录 / Skill 包 / 上下文胶囊 / 本地导出</div>
+      </div>
+      <button id="openOptions" class="ghost-btn">设置</button>
+    </div>
+
+    <div class="card quick">
+      <button class="action primary" id="toggleSidebar">打开侧边栏</button>
+      <button class="action primary" id="openOutline">打开导航</button>
+      <button class="action primary" id="openSkillStudio">沉淀 Skill</button>
+      <button class="action primary" id="openContextStudio">上下文胶囊</button>
+      <button class="action" id="openExportCenter">导出中心</button>
+      <button class="action" id="openOrganizeStudio">AI 整理</button>
+      <button class="action" id="saveSelection">保存选中</button>
+      <button class="action" id="savePage">保存页面</button>
+      <button class="action" id="saveAi">保存 AI 回复</button>
+    </div>
+
+    <div class="card quick slim">
+      <button class="action primary" id="exportPdf">导出 PDF</button>
+      <button class="action" id="exportMd">导出 Markdown</button>
+      <button class="action" id="exportJson">导出 JSON</button>
+      <button class="action" id="restoreLauncher">打开悬浮入口</button>
+      <button class="action" id="hideLauncher">关闭 4 小时</button>
+    </div>
+
+    <div class="card">
+      <div class="section-head">
+        <div class="section-title">当前页面</div>
+        <div class="badge" id="pageBadge">—</div>
+      </div>
+      <div class="meta" id="pageMeta">读取中…</div>
+      <div class="chip-row">
+        <button class="chip active" data-scope="page">本页摘录</button>
+        <button class="chip" data-scope="all">全部摘录</button>
+      </div>
+      <div class="list" id="itemList"></div>
+    </div>
+
+    <div class="card">
+      <div class="section-head">
+        <div class="section-title">长期片段 / Skill 包</div>
+        <div class="badge" id="snippetBadge">0</div>
+      </div>
+      <div class="list" id="snippetList"></div>
+    </div>
+  </div>
+
+  <script src="common.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

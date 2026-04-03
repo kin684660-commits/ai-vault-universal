@@ -1,0 +1,62 @@
+{
+  "manifest_version": 3,
+  "name": "AI Vault Universal",
+  "version": "1.4.4",
+  "description": "全网页可用的本地 AI 工作台：支持摘录、Skill 包、上下文胶囊、多模型适配、PDF/Markdown/JSON 导出、AI 整理与轻量悬浮入口。",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "common.js",
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Vault Universal"
+  },
+  "options_page": "options.html",
+  "commands": {
+    "save-selection": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "保存当前选中文字"
+    },
+    "toggle-sidebar": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K"
+      },
+      "description": "打开/关闭 AI Vault 侧边栏"
+    },
+    "save-page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "保存当前页面摘要"
+    }
+  }
+}

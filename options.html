@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Vault Universal 设置</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="page">
+    <div class="hero">
+      <div>
+        <h1>AI Vault Universal</h1>
+        <p>把网页摘录、AI 对话沉淀、个人信息、上下文胶囊和可复用的 Skill 包都收进本地知识库。</p>
+      </div>
+      <div class="hero-actions">
+        <button id="exportJson" class="btn">导出 JSON</button>
+        <button id="exportMd" class="btn">导出 Markdown</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <h2>长期片段 / Skill 包</h2>
+        <div class="form">
+          <label>标题</label>
+          <input id="snippetTitle" type="text" placeholder="例如：论文摘要流程 / 自我介绍 / 写作风格">
+          <div class="split triple">
+            <div>
+              <label>类型</label>
+              <select id="snippetKind">
+                <option value="skill">Skill 包</option>
+                <option value="prompt">Prompt</option>
+                <option value="profile">个人信息</option>
+              </select>
+            </div>
+            <div>
+              <label>触发词（可选）</label>
+              <input id="snippetTrigger" type="text" placeholder="例如：/intro">
+            </div>
+            <div>
+              <label>分组 / 文件夹</label>
+              <input id="snippetFolder" type="text" placeholder="例如：Skill 包 / Prompt 模板">
+            </div>
+          </div>
+          <label>标签</label>
+          <input id="snippetTags" type="text" placeholder="多个标签用逗号分隔，例如：长期、个人信息、常用">
+          <label>内容</label>
+          <textarea id="snippetContent" rows="6" placeholder="长期保留的个人信息、提示词模板、常用回复、工作流程总结…"></textarea>
+          <button id="addSnippet" class="btn primary">添加到长期库</button>
+        </div>
+        <div id="snippetList" class="list"></div>
+      </section>
+
+      <section class="card">
+        <h2>插件设置</h2>
+        <label class="toggle"><input id="showLauncher" type="checkbox"> <span>显示可拖拽竖向悬浮入口</span></label>
+        <label class="toggle"><input id="enableSlashSnippets" type="checkbox"> <span>在输入框支持 /片段 触发</span></label>
+        <label class="toggle"><input id="enableCustomSendBehavior" type="checkbox"> <span>AI 页面启用 Enter 换行 / Ctrl(⌘)+Enter 发送</span></label>
+        <label>大段粘贴提醒阈值（字符）</label>
+        <input id="longPasteThreshold" type="number" min="500" max="20000" step="100">
+        <label>最大保存条数</label>
+        <input id="maxItems" type="number" min="100" max="5000" step="100">
+        <div class="inline-actions">
+          <button id="saveSettings" class="btn primary">保存设置</button>
+          <button id="restoreLauncher" class="btn">打开悬浮入口</button>
+          <button id="hideLauncher4h" class="btn">关闭悬浮入口 4 小时</button>
+        </div>
+        <div class="tip">建议产品路径：短期内容先存为摘录；跨模型续聊时生成“上下文胶囊”；真正会复用的方法再沉淀到 Skill 包。</div>
+      </section>
+    </div>
+
+    <section class="card">
+      <div class="row">
+        <h2>全部摘录</h2>
+        <input id="searchInput" type="text" placeholder="搜索摘录 / 域名 / 模型 / 标题 / 标签 / 分组">
+      </div>
+      <div id="itemList" class="list"></div>
+    </section>
+  </div>
+
+  <script src="common.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
